@@ -1,0 +1,98 @@
+media:
+  input: images/personas
+  output: images/personas
+  rename: safe
+  categories: [image]
+
+content:
+  - name: personas
+    label: "🌙 페르소나 관리"
+    type: file
+    path: data/personas.json
+    format: json
+    fields:
+      - name: info
+        label: "사이트 문구"
+        type: object
+        fields:
+          - name: owner
+            label: "수집가 이름 (맨 아래 COLLECTED BY)"
+            type: string
+          - name: intro
+            label: "첫 화면 한 줄 소개"
+            type: string
+          - name: about
+            label: "맨 아래 소개글"
+            type: text
+
+      - name: personas
+        label: "페르소나 목록 (위에 있는 순서대로 전시돼요)"
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name} · {type}"
+        fields:
+          - name: name
+            label: "이름"
+            type: string
+            required: true
+          - name: roman
+            label: "영문 표기 (예: S E O R I A N)"
+            type: string
+          - name: mark
+            label: "상징 글자 (예: S.)"
+            type: string
+          - name: type
+            label: "장르 / 세계관"
+            type: string
+          - name: age
+            label: "나이"
+            type: string
+          - name: role
+            label: "직업 · 소속 · 역할"
+            type: string
+          - name: tone
+            label: "성격과 특징"
+            type: text
+          - name: quote
+            label: "대표 대사"
+            type: string
+          - name: story
+            label: "이야기 (FRAGMENTS 탭) — 빈 줄로 문단을 나눠요"
+            type: text
+          - name: cover
+            label: "대표 이미지 (메인 조각 · 읽기 화면 왼쪽)"
+            type: image
+          - name: art
+            label: "대표 이미지가 없을 때 쓸 장식"
+            type: select
+            options:
+              values:
+                - value: moon
+                  label: "달"
+                - value: bot
+                  label: "꽃"
+                - value: arch
+                  label: "성당 창"
+                - value: type
+                  label: "큰 글자 (상징 글자 사용)"
+                - value: veil
+                  label: "연기"
+                - value: stars
+                  label: "별"
+          - name: gallery
+            label: "이미지 모음 (VISUALS 탭)"
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{caption}"
+            fields:
+              - name: src
+                label: "이미지"
+                type: image
+                required: true
+              - name: caption
+                label: "설명 (선택)"
+                type: string
