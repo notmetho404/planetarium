@@ -96,3 +96,9 @@ content:
               - name: caption
                 label: "설명 (선택)"
                 type: string
+              - name: creditName
+                label: "프롬프트 출처 이름 (선택 · 예: @닉네임)"
+                type: string
+              - name: creditUrl
+                label: "프롬프트 출처 링크 (선택 · 넣으면 확대 화면에 버튼이 생겨요)"
+                type: string
