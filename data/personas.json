@@ -20,11 +20,13 @@
       "gallery": [
         {
           "src": "images/personas/file-2.png",
-          "caption": "https://x.com/leftbypeace/status/2124691098031509627"
+          "caption": "능소화",
+          "creditUrl": "https://x.com/leftbypeace/status/2124691098031509627"
         },
         {
           "src": "images/personas/file-3.png",
-          "caption": "https://x.com/ToriCHICKEN__/status/2124885406747627698"
+          "caption": "웨딩",
+          "creditUrl": "https://x.com/ToriCHICKEN__/status/2124885406747627698"
         }
       ]
     }
