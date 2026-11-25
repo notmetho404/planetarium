@@ -56,6 +56,14 @@ body::before{content:'';position:fixed;inset:0;z-index:-1;background:radial-grad
 .atlas-plane.extra{margin-top:40px}
 .assets-empty{grid-column:1/-1;font:13px/1.8 var(--kr);color:#73635c;margin:0;padding:30px 0;border-top:1px solid #a49d9352;border-bottom:1px solid #a49d9352}
 .asset[data-asset-index]:nth-child(n){background:#151317}.asset:nth-child(3) .asset-img{filter:none}
+
+/* image frame fixes */
+.artifact.has-cover,.artifact.has-cover[class]{background:transparent!important;border:0;box-shadow:none;overflow:visible}
+.artifact.has-cover::after,.artifact.has-cover::before{display:none!important}
+.artifact .persona-cover{background:transparent;filter:drop-shadow(0 18px 30px #000c)}
+.spread-visual .sv-sigil{width:auto;height:84%;aspect-ratio:3/4;max-width:86%;top:6%;left:50%;transform:translateX(-50%) rotate(-6deg)}
+.assets .asset{aspect-ratio:1/1}
+@media(max-width:750px){.spread-visual .sv-sigil{height:86%;top:5%}}
 </style>
 </head>
 <body>
