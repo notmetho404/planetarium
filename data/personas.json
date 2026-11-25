@@ -30,7 +30,18 @@
         },
         {
           "src": "images/personas/file-4.png",
-          "caption": "포옹"
+          "caption": "포옹",
+          "creditUrl": "https://x.com/__MI__RO_/status/2124573294804488504"
+        },
+        {
+          "src": "images/personas/file-5.png",
+          "caption": "소파",
+          "creditUrl": "https://x.com/zetarouas/status/2124850922497204617"
+        },
+        {
+          "src": "images/personas/file-6.png",
+          "caption": "구월천사",
+          "creditUrl": "https://x.com/yeon__ing/status/2124424658577707185"
         }
       ]
     }
