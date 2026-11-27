@@ -117,7 +117,21 @@
       "type": "현대판타지 / 테미스",
       "age": "30",
       "role": "THEMIS MUSE · 가이드",
-      "cover": "images/personas/1-2.png"
+      "cover": "images/personas/1-2.png",
+      "gallery": [
+        {
+          "src": "images/personas/file-18.png",
+          "caption": "미소"
+        },
+        {
+          "src": "images/personas/file-19.png",
+          "caption": "즐거움"
+        },
+        {
+          "src": "images/personas/file-20.png",
+          "caption": "쑥스러움"
+        }
+      ]
     }
   ]
 }
